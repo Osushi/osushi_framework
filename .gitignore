@@ -1,0 +1,68 @@
+# Local
+log/app/*
+!log/app/.keep
+log/server/*
+!log/server/.keep
+log/worker/*
+!log/worker/.keept
+tmp/app/*
+!tmp/app/.keep
+tmp/task/*
+!tmp/task/.keep
+tmp/session/*
+!tmp/session/.keep
+bin/*
+.env
+public/assets/css/*
+public/assets/fonts/*
+public/assets/js/*
+public/assets/img/parts/*
+
+# Composer
+composer.phar
+composer.lock
+/vendor/
+
+# Node
+node_modules/
+
+# Bower
+bower_components/
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+.org-id-locations
+*_archive
+*_flymake.*
+/eshell/history
+/eshell/lastdir
+/elpa/
+*.rel
+/auto/
+.cask/
+/server/
