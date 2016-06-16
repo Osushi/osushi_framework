@@ -14,9 +14,13 @@ tmp/session/*
 bin/*
 .env
 public/assets/css/*
+!public/assets/css/.keep
 public/assets/fonts/*
+!public/assets/fonts/.keep
 public/assets/js/*
-public/assets/img/parts/*
+!public/assets/js/.keep
+public/assets/img/*
+!public/assets/img/.keep
 
 # Composer
 composer.phar
