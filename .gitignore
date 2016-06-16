@@ -4,7 +4,7 @@ log/app/*
 log/server/*
 !log/server/.keep
 log/worker/*
-!log/worker/.keept
+!log/worker/.keep
 tmp/app/*
 !tmp/app/.keep
 tmp/task/*
