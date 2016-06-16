@@ -1,0 +1,28 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "2.2.*",
+        "monolog/monolog": "1.17.*",
+        "slim/slim": "2.6.*",
+        "slim/views": "0.1.*",
+        "slim/extras": "2.0.*",
+        "twig/twig": "1.24.*",
+        "illuminate/database": "5.2.*",
+        "illuminate/events": "5.2.*",
+        "robmorgan/phinx": "0.5.*",
+        "mobiledetect/mobiledetectlib": "2.8.*",
+        "respect/validation": "1.0.*",
+        "guzzlehttp/guzzle": "6.1.*",
+        "codegyre/robo": "0.7.*"
+    },
+    "require-dev": {
+        "codeception/codeception": "2.1.*"
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-0": {
+            "": ["config/", "app/", "lib/"]
+        }
+    }
+}
