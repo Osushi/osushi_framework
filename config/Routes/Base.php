@@ -5,6 +5,16 @@ $app->get('/?', function () {
   $top->action_show();
 });
 
+$app->post('/?', function () {
+  $top = new \Controllers\Top();
+  $top->action_post();
+});
+
+$app->delete('/?', function () {
+  $top = new \Controllers\Top();
+  $top->action_delete();
+});
+
 $app->notFound(function () use ($app) {
   \Services\Render::render($app, 'exception/404');
 });
