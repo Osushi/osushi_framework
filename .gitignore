@@ -19,8 +19,8 @@ public/assets/fonts/*
 !public/assets/fonts/.keep
 public/assets/js/*
 !public/assets/js/.keep
-public/assets/img/*
-!public/assets/img/.keep
+public/assets/img/parts/*
+!public/assets/img/parts/.keep
 
 # Composer
 composer.phar
