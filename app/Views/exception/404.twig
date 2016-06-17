@@ -1,0 +1,16 @@
+{% extends "_layouts/base.twig" %}
+{% block title %}{% autoescape true %}{{header.title}}{% endautoescape %}{% endblock %}
+{% block last_update_css %}?{{meta.unixtime}}{% endblock %}
+{% block last_update_js %}?{{meta.unixtime}}{% endblock %}
+
+{% block body %}
+  {% autoescape true %}
+
+    <div class="container">
+      <div class="text-center" style="margin-top: 50px;">
+        404 not found
+      </div>
+    </div>
+
+  {% endautoescape %}
+{% endblock %}
