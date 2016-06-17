@@ -15,7 +15,8 @@
         "codegyre/robo": "0.7.*"
     },
     "require-dev": {
-        "codeception/codeception": "2.1.*"
+        "codeception/codeception": "2.2.*",
+        "codeception/phpbuiltinserver": "1.2.*"
     },
     "config": {
         "bin-dir": "bin/"
