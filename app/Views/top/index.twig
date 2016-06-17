@@ -6,17 +6,51 @@
 {% block body %}
   {% autoescape true %}
 
+    {% include "_includes/message.twig" %}
+
     <div class="container">
-      <div class="text-center" style="margin: 50px 0 20px 0;">
+      <div style="margin: 20px 0 20px 0;">
         <form action="/" method="POST" class="form-inline">
           <input type="hidden" name="{{csrf_key}}" value="{{csrf_token}}">
           <div class="form-group">
             <label for="message">Message</label>
-            <input type="text" class="form-control" id="message" placeholder="Message">
+            <input type="text" name="message" class="form-control" id="message" placeholder="Message" value="{{flash.errors.params.message}}">
           </div>
           <button type="submit" class="btn btn-default">Send</button>
         </form>
         <hr>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Post_ID</th>
+              <th>メッセージ内容</th>
+              <th>登録日</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% if data|length > 0 %}
+              {% for post in data %}
+                <tr>
+                  <td>{{post.post_id}}</td>
+                  <td>{{post.message}}</td>
+                  <td>{{post.created_at|date("Y-m-d H:i:s")}}</td>
+                  <form action="/" method="POST">
+                    <input type="hidden" name="{{csrf_key}}" value="{{csrf_token}}">
+                    <input type="hidden" name="_METHOD" value="DELETE"/>
+                    <input type="hidden" name="post_id" value="{{post.post_id}}">
+                    <td>
+                      <input type="submit" class="btn btn-default btn-xs" value="Delete">
+                    </td>
+                  </form>
+                </tr>
+              {% endfor %}
+            {% endif %}
+          </tbody>
+        </table>
       </div>
     </div>
 
