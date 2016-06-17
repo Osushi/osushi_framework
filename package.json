@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Osushi/slim_skeleton#readme",
   "devDependencies": {
     "bower": "^1.7.9",
+    "bower-webpack-plugin": "^0.1.9",
     "browser-sync": "^2.13.0",
     "browser-sync-webpack-plugin": "^1.0.3",
     "compass-mixins": "^0.12.10",
