@@ -27,6 +27,9 @@ composer.phar
 composer.lock
 /vendor/
 
+# Codeception
+tests/_output/*
+
 # Node
 node_modules/
 
