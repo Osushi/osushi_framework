@@ -1,4 +1,4 @@
-# Example for Osushi Framework
+# Osushi Framework
 
 Description
 ---
@@ -32,10 +32,7 @@ You must follow these before running.
 $ cd {ROOT_PATH}
 $ curl -sS https://getcomposer.org/installer | php
 $ php composer.phar install
-$ npm install --save-dev
-$ $(npm bin)/bower install --save-dev
 $ cp .env.sample .env # Set environment variables!
-$ bin/phinx migrate
 $ bin/robo init
 ```
 
@@ -45,8 +42,6 @@ Run
 ```
 $ cd {ROOT_PATH}
 $ php composer.phar self-update; php composer.phar update # If you need there.
-$ bin/phinx migrate
-$ $(npm bin)/webpack --watch
 $ php -S 0.0.0.0:2000 -t public/
 ```
 
@@ -63,9 +58,9 @@ $ bin/codecept run
 License
 ---
 
-Copyright (C) Osushi.
+Copyright (C) [Osushi](https://github.com/Osushi)
 
 Author
 ---
 
-* Osushi
+* [Osushi](https://github.com/Osushi)
