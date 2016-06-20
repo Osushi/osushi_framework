@@ -1,5 +1,9 @@
 # Osushi Framework
 
+Example
+---
+https://github.com/Osushi/osushi_framework_example
+
 Description
 ---
 This script support this:
@@ -50,6 +54,12 @@ Test
 
 Use Codeception testing framework.
 
+* Install Dependencies
+```
+$ bin/codecept bootstrap
+```
+
+* Run
 ```
 $ cd {ROOT_PATH}
 $ bin/codecept run
